@@ -5,5 +5,5 @@
 - Jekyll local server 시작
 
 ```
-bundle exec jekyll serve --watch
+bundle exec jekyll serve --watch --incremental
 ```
