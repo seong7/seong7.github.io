@@ -7,10 +7,6 @@ categories: Algorithm_DataStructure
 tags: algorithm
 ---
 
-> 이 글은 엔지니어대한민국 님의 **[유튜브 영상](https://www.youtube.com/watch?v=yHBYeguDR0A)** 을 바탕으로 학습한 것을 정리한 글입니다.
-
-<br>
-
 ### Integer 를 bit 로 보기
 
 - Integer 는 `4 bytes = 32 bits (32 개의 1 과 0)` 로 이루어짐
@@ -237,3 +233,9 @@ x | x = x
    */
    }
    ```
+
+<br>
+
+### 출처
+
+엔지니어대한민국 님의 **[유튜브 영상](https://www.youtube.com/watch?v=yHBYeguDR0A)**
