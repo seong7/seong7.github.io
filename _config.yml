@@ -9,12 +9,12 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: 성진
-subtitle: "sub title"
+title: "Jason 의 개발 공부 로그"
+# subtitle:
 email: seongjinkim1123@gmail.com
-name: 김성진
+name: Seongjin Kim
 description: >
-  description
+  학습한 내용을 기록하는 공간입니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -94,7 +94,7 @@ social:
 
   - name: GitHub
     icon: github
-    username: Seongjin Kim
+    username: seong7
     url: https://github.com/seong7
     desc: Follow me on GitHub
     share: true
