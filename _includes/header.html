@@ -4,10 +4,8 @@
     <a href="/posts" class="logo">
       {% if site.logo %}
       <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
       {% endif %}
-      <span>블로그</span>
+      <h4 class="title">{{site.title}}</h4>
     </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
       <i class="fa fa-bars"></i>
