@@ -5,6 +5,8 @@ permalink: /about/
 main_nav: true
 ---
 
-![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
+![프로필사진]({{ site.baseurl }}/assets/profile-jepeto.jpg "Profile Picture"){:.profile}
 
-작성 예정...
+안녕하세요 !
+
+<!-- 프론트엔드 개발자로 성장하기 위한 매일매일을 기록하고 있는 Jason 입니다. -->
