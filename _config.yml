@@ -59,6 +59,8 @@ descriptions:
     desc: cs
   - cat: etc
     desc: etc
+  - cat: algorithm
+    desc: algorithm
 
 # Social icons and sharing options
 #
