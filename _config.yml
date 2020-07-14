@@ -48,7 +48,7 @@ jekyll-archives:
     tag: "/tag/:name/"
 
 # Disqus comments
-# disqus_shortname: "seong7-github-io"
+disqus_shortname: "seong7-github-io"
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
