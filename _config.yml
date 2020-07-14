@@ -35,6 +35,7 @@ pagination:
   per_page: 3
   permalink: "/page/:num/"
   sort_reverse: true
+  category: "Algorithm_DataStructure"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
