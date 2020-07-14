@@ -4,7 +4,6 @@ title: "기술 블로그를 시작하며 (운영 계획)"
 date: 2020-07-12
 author: Seongjin Kim
 categories: etc
-tags: start
 ---
 
 ## 블로그를 시작하며

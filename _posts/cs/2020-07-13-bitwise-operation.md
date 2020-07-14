@@ -3,8 +3,7 @@ layout: post
 title: "비트 연산 정리"
 date: 2020-07-13
 author: Seongjin Kim
-categories: Algorithm_DataStructure
-tags: algorithm
+categories: computer_science
 ---
 
 ### Integer 를 bit 로 보기
