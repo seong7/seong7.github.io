@@ -4,7 +4,6 @@ title: "Github 블로그 (by Jekyll) 만들기 - 자료 모음"
 date: 2020-07-14
 author: Jason
 categories: etc
-visible: 1
 ---
 
 # Jekyll 로 Github 블로그 만들기
@@ -141,6 +140,8 @@ Jekyll 로 생성된 사이트의 기본적인 디렉터리 구조와 Liquid 문
 > **\_config.yml 파일을 수정한 경우**  
 > 수정사항을 bundler 가 자동으로 감지하지 못하므로 server 를 반드시 재시작해줘야 반영된다.
 
+<br>
+
 ### 6. 내 블로그가 구글에서 검색되도록 하기
 
 Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는다.
@@ -148,6 +149,8 @@ Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는�
 검색되도록 하기 위해 **[초보 몽키님의 블로그 글](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)** 을 따르기를 추천한다.
 
 적용 후 시간이 조금 흐르면 검색이 가능해진다.
+
+<br>
 
 ### 기타 도움되는 사이트 모음
 
@@ -162,7 +165,7 @@ Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는�
 
 <br>
 
-## 앞으로 적용할 부분
+### 앞으로 적용할 부분
 
 아래 부분은 나도 아직 적용 전이라 자료에 확신은 없다.  
 메모 용으로 써두었다.

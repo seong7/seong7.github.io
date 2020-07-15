@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+page_title: "Jason 의 개발 공부 로그 | About"
 permalink: /about/
 main_nav: true
 ---

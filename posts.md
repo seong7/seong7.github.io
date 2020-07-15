@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Posts"
+page_title: "Jason 의 개발 공부 로그"
+title: Posts
 permalink: /posts/
 main_nav: true
 ---
