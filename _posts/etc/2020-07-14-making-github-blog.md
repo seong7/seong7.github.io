@@ -35,11 +35,11 @@ Github Pages 는 static 웹사이트를 호스팅 해주는 Github 의 서비스
 
 간단히 index.html 파일을 생성해 push 하면 약 30초 후 해당 파일이 https://`username`.github.io 링크에서 열리는 것을 확인할 수 있다.
 
-<a href="//seong7.github.io/assets/posts/2020/07/14/making/github/blog/github1.png" data-lightbox="github1-large" data-title="Check out the screenshot">
-  <img src="//seong7.github.io/assets/posts/2020/07/14/making/github/blog/github1.png" title="Check out the screenshot">
+<a href="https://user-images.githubusercontent.com/52827441/87873350-e1c54e80-c9fb-11ea-95a9-ae68e0e23967.png" data-lightbox="github1-large" data-title="github repository 만들기 화면">
+<img src="https://user-images.githubusercontent.com/52827441/87873350-e1c54e80-c9fb-11ea-95a9-ae68e0e23967.png" alt="github1"/>
 </a>
 
-> 내가 알기로는 master branch 만 배포가 가능하고 다른 branch 에서 배포를 테스트할 수는 없는 것으로 알고 있다.
+내가 알기로는 master branch 만 배포가 가능하고 다른 branch 에서 배포를 테스트할 수는 없는 것으로 알고 있다.
 
 <br>
 
