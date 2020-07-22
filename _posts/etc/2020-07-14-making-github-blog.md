@@ -70,7 +70,8 @@ Jekyll 에서는 **default theme** 을 제공하고 있다.
 문서의 설명대로 사이트 생성 후 `bundle exec jekyll serve` 를 통해 http://localhost:4000 에 serve 할 수 있는데, 나는 아래 옵션들을 추가해서 사용하고 있다.
 
 - `--watch` : 파일 변화를 감지해 자동 re-build 해준다.
-- `--incremental` : 증분 재생성 (변화된 페이지만 re-build) 해 build 속도를 가속 시킨다.
+- `--incremental` : 증분 재생성 (변화된 페이지만 re-build) 해 build 속도를 가속 시킨다.  
+  (수정 : --incremental 은 완전한 build 를 해내지 못할 위험성이 있다는 글을 읽어 더 이상 사용하지 않음, 실제로도 변경 내용이 잘 적용되지 않는 문제점 있었음)
 
 ```
 bundle exec jekyll serve --watch --incremental
@@ -169,10 +170,6 @@ Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는�
 
 아래 부분은 나도 아직 적용 전이라 자료에 확신은 없다.  
 메모 용으로 써두었다.
-
-구글 애널리틱스 적용 :  
-https://mingnol2.tistory.com/70  
-https://analyticsmarketing.co.kr/digital-analytics/google-analytics-basics/2211/
 
 검색 기능 적용 :  
 http://labs.brandi.co.kr/2019/04/15/chunbs.html  
