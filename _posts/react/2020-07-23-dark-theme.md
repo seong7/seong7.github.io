@@ -28,7 +28,7 @@ const Toggle = (props) => {
         checked={props.isChecked}
       />
       <label htmlFor="switch" className="toggle-label">
-        {props.text}
+        {props.text /* toggle 의 이모티콘 넣어주는 곳 */}
       </label>
     </>
   );
@@ -171,7 +171,7 @@ export default ThemeToggle;
 
 <br>
 
-## CSS 변수 & var() 함수
+## 2. CSS 변수 선언 후 var() 함수로 호출
 
 지금까지 CSS 변수가 존재하는지 몰랐기 때문에 조금의 러닝 커브가 필요했다.  
 하지만 생각보다 어렵지 않았다.
@@ -194,10 +194,11 @@ export default ThemeToggle;
 
 ### 사용 예제
 
-- variables.css  
+- **variables.css**  
   각 Theme mode 에 따라 CSS 변수를 저장한 코드이다.
 
 ```css
+/* body 태그 중 data-theme 속성 값으로 light 를 가진 것 선택 */
 body[data-theme="light"] {
   /* common */
   --bg: #fff;
@@ -211,6 +212,7 @@ body[data-theme="light"] {
   --color-green: #2bb14c;
 }
 
+/* body 태그 중 data-theme 속성 값으로 dark 를 가진 것 선택 */
 body[data-theme="dark"] {
   /* common */
   /* --bg: #121212; */
@@ -226,7 +228,7 @@ body[data-theme="dark"] {
 }
 ```
 
-- index.css  
+- **index.css**  
   위에 선언한 변수들을 호출해 적용
 
 ```css
