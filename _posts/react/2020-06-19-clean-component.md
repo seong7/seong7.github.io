@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Clean Components"
+title: "[번역] Clean Components"
 date: 2020-06-19
 author: Jason
 categories: react
