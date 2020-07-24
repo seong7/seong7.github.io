@@ -99,16 +99,16 @@ const themeTransition = () => {
     document.body.classList.remove("theme-transition");
   }, 1000);
   /*
-   * css 에 아래를 추가 한다. (theme-transition 클래스에 대한 style)
-   *
-   * body.theme-transition,
-   * body.theme-transition *,
-   * body.theme-transition *:before,
-   * body.theme-transition *:after {
-   *   transition: all 0.3s ease-in-out !important;
-   *   transition-delay: 0 !important;
-   * }
-   *
+     css 에 아래를 추가 한다. (theme-transition 클래스에 대한 style)
+   
+     body.theme-transition,
+     body.theme-transition *,
+     body.theme-transition *:before,
+     body.theme-transition *:after {
+       transition: all 0.3s ease-in-out !important;
+       transition-delay: 0 !important;
+     }
+     
    */
 };
 
