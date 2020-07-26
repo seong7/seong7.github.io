@@ -4,6 +4,7 @@ title: "React 프로젝트 - Dark Theme 적용기"
 date: 2020-07-23
 author: Jason
 categories: react
+published: false
 ---
 
 ## 개요
@@ -158,6 +159,10 @@ Overreacted 는 **Facebook React 팀의 개발자 [Dan Abramov 님](https://gith
 그럼 예시로 든 사이트들은 IE 에서 어떻게 서비스하고 있을까?
 
 **1. Naver**
+
+<a href="hhttps://user-images.githubusercontent.com/52827441/88371728-8fa37500-cdcf-11ea-9758-81f55b9a5f09.png" data-lightbox="dan-dark-large" data-title="Dan's blog - Dark Theme">
+<img src="https://user-images.githubusercontent.com/52827441/88371728-8fa37500-cdcf-11ea-9758-81f55b9a5f09.png" alt="Dan's blog - Dark Theme" style="height: 350px; width: auto;"/>
+</a>
 
 **2. Facebook**
 
