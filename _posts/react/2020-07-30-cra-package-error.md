@@ -60,6 +60,8 @@ eject 하는 방법은 쉽다. [[설명 링크](https://helloinyong.tistory.com/
 
 그 결과 내장되어 있던 패키지들과 환경 설정 코드들이 정체를 드러냈다.
 
+> 혹시 eject 를 **undo** 하고 싶다면 **[링크 참조](https://stackoverflow.com/questions/51454729/undo-npm-run-eject-in-react)**
+
 ## eslint version upgrade
 
 ```
