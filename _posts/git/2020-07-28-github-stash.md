@@ -1,22 +1,10 @@
 ---
 layout: post
-title: "Git 명령어"
-date: 2020-07-23
+title: "Git stash 에 대하여"
+date: 2020-07-28
 author: Jason
 categories: Git_&_Github
 ---
-
-## Commit 취소
-
-### 커밋 기록 삭제
-
-```bash
-$ git reset --mixed {hash 값}
-```
-
-- 돌아갈 커밋의 변경사항을 unstaged 상태로 남기고 취소
-
-<br>
 
 ## Stash 사용
 
@@ -46,11 +34,11 @@ $ git stash list
 // 가장 최근의 stash 가져와 적용
 $ git stash apply
 
-// stash 이름 (ex. stash@{2} 에 해당하는 stash 가져와 적용)
-$ git stash apply {stash 이름}
+// stash 이름 (ex. stash@{2} 의 숫자 값을 이용해 stash 가져오고 적용한다.)
+$ git stash apply {stash 번호}
 
 // 원래 staged 파일들을 다시 staged 상태로 가져와 적용
-$ git stash apply {stash 이름} --index
+$ git stash apply {stash 번호} --index
 ```
 
 ### stash 제거하기
@@ -59,7 +47,7 @@ $ git stash apply {stash 이름} --index
 // 가장 최근 stash
 $ git stash drop
 
-$ git stash drop {stash 이름}
+$ git stash drop {stash 번호}
 
 // apply + drop 형태
 $ git stash pop
@@ -71,7 +59,7 @@ $ git stash pop
 // 가장 최근의 stash 를 사용해 패치를 만들고 그것을 거꾸로 적용
 $ git stash shop -p | git apply -R
 
-$ git stash shop -p {stash 이름} | git apply -R
+$ git stash shop -p {stash 번호} | git apply -R
 ```
 
 <br>
