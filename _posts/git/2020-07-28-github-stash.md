@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git stash 에 대하여"
+title: "Git Stash 사용법"
 date: 2020-07-28
 author: Jason
 categories: Git_&_Github
