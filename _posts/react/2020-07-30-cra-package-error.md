@@ -62,6 +62,15 @@ eject 하는 방법은 쉽다. [[설명 링크](https://helloinyong.tistory.com/
 
 > 혹시 eject 를 **undo** 하고 싶다면 **[링크 참조](https://stackoverflow.com/questions/51454729/undo-npm-run-eject-in-react)**
 
+> 기존에 설치되어 있던 아래 devDependency 들이 eject 후에 dependency 로 추가되어 기존 패키지들을 devDependency 삭제해줬다.
+>
+> - eslint-plugin-react-hooks
+> - eslint-plugin-react
+> - eslint-plugin-jsx-a11y
+> - eslint-plugin-import
+>
+> (devDependency 만 삭제는 안돼서 `yarn remove {package 명}` 로 둘 다 삭제 후 다시 dependency 로 add 해줬다.)
+
 ## eslint version upgrade
 
 ```
