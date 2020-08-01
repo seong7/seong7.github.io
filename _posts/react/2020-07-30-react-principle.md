@@ -13,14 +13,31 @@ React 를 사용하는데만 집중해왔는데 좀 더 심도 깊은 학습을 
 
 첫 번째이자 이번 주 주제는 **React 의 작동 원리** 이다.
 
-## Virtual DOM
+<br>
 
-React 는 직접 DOM 을 제어하는 방식이 아니라 중간에 가상의 DOM 인 Virtual DOM 을 두어 아래 두 가지의 포인트를 향상시켰다.
+## Virtual DOM (가상 돔)
 
-1. 개발의 편의성 (DOM 을 직접 제어하지 않는다.)
-2. 성능 (배치 처리<sub>setState 와 관련있는 듯 하다.</sub>로 DOM 변경 <sub>DOM 직접 조작은 효율적이지 않다. ([설명 링크](https://velopert.com/3236))</sub>)
+React 의 장점은 가상 DOM 을 통해서 UI 를 빠르게 업데이트한다는 점이다.
 
-Virtual DOM 이 바로 React 의 가장 주요 장점인데 어떻게 만들어지고 관리되는지 알아보겠다.
+가상 DOM 은 **이전 UI 상태를 메모리에 유지**해서, **변경될 UI 의 최소 집합을 계산**하는 기술이다.
+
+즉, 가상 DOM 덕분에 불필요한 UI 업데이트는 줄고 성능은 좋아진다.
+
+React 는 직접 DOM 을 제어하는 방식이 아니라 가상 DOM 을 두어 아래 두 가지의 포인트를 향상시켰다.
+
+1. **개발의 편의성 (DOM 을 직접 제어하지 않는다.)**  
+   DOM 을 직접 업데이트하는 코드는 잘 관리하지 않으면 프로그램이 커질수록 복잡도가 기하급수적으로 증가한다.  
+   따라서 Vanilla JavaScript 로 UI 업데이트를 처리하려면 React 에 상응하는 자체 라이브러리를 만들어서 관리하는게 좋다.
+
+2. **성능** (배치 처리<sub>setState 와 관련있는 듯 하다.</sub>로 DOM 변경 <sub>DOM 직접 조작은 효율적이지 않다. ([설명 링크](https://velopert.com/3236))</sub>)
+
+또 다른 JavaScript 프레임워크인 **[Vue.js](https://vuejs.org/)** 에서도 React.js 의 **Virtual DOM 개념**을 사용하고 있다. 또한 앞으로 나올 프레임워크들에도 Virtual DOM 이 도입될 것으로 예상되고
+있다.
+
+**즉, Virtual DOM 을 이해하면 Vue 를 포함한 미래의 프레임워크들의 동작도 쉽게
+이해할 수 있을 것이다.**
+
+이처럼 Virtual DOM 이 바로 React 의 가장 주요 장점인데, 어떻게 만들어지고 관리되는지 알아보겠다.
 
 ## Virtual DOM 렌더링
 
@@ -58,8 +75,12 @@ ReactDOM.render(React.createElement(App), document.getElementById("root"));
   - ref 속성이 있으면 attachRefs 속성 등록
 - 하위 `ReactComponent` 객체가 있으면 `ReactCompoenent` 객체를 생성하고 다시 `ReactReconciler.mountComponent()` 메서드를 실행
 
+<br>
+
 ## Reference
 
 - Naver D2 - [React 적용 가이드 - React 작동 방법](https://d2.naver.com/helloworld/9297403)
 
 - [Virtual DOM 조작 방식의 장점](https://velopert.com/3236)
+
+- [(책) 실전 리액트 프로그래밍 - 이재승](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=243686179)
