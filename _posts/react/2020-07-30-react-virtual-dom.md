@@ -139,7 +139,7 @@ ReactDOM.render(
 - 버튼을 클릭하면 state 인 priority 값이 변경되고 화면이 re-render 된다.
 - `React.memo` 로 만들어진 `Title` 컴포넌트는 속성값이 변경될 때만 호출된다.
 
-`ReactDOM.render` 함수로 전달된 위 리액트 요소의 Tree 는 다음과 같다.
+`ReactDOM.render` 함수 <sub>CRA 에선 `index.js` 에서 호출되어 있다.</sub> 로 전달된 위 리액트 요소의 Tree 는 다음과 같다.
 
 ```javascript
 const initialEementTree = {
