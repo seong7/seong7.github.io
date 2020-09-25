@@ -107,7 +107,7 @@ const result: any = useSelector(selector: Function, equalityFn?: Function)
      **reference 가 동일할 경우엔** `selector` 실행 없이 **cache 된 data** 를 `return` 한다.
 
   - `action` 이 `dispatch` 된 경우, `useSelector()` 는 `selector` 를 실행시키고 이전 결과와 현재 결과 의 reference 를 비교를 한다. 만약 reference 가 다를 경우에만 **컴포넌트는 re-render** 된다.  
-    (비교는 `strict` `===` 를 사용한다. / <sub>`connect()` 는 field 단위의 **swallow equality check** 를 한다.</sub>)  
+    (비교는 `strict` `===` 를 사용한다. / <sub>`connect()` 는 field 단위의 **[shallow equality check](https://stackoverflow.com/questions/36084515/how-does-shallow-compare-work-in-react)** 를 한다.</sub>)  
     **: `reducer` 에서 새로운 reference `state` 를 생성해줘야하는 이유 중 하나인 것 같다. (re-render 하기 위해)**
 
   - `connect()` 와 달리 `useSelector()` 는 부모 컴포넌트의 **re-rendering** 에 의한 **강제 re-rendering** 은 막지 못한다. (props 가 변하지 않았다 하더라도..)  
@@ -166,7 +166,7 @@ const result: any = useSelector(selector: Function, equalityFn?: Function)
 
     > 하나의 함수형 컴포넌트에서 `useSelect()` 를 여러번 호출할 수도 있다. 각각의 호출은 `Redux store` 에 개별적인 **subscription** 을 생성한다. 하지만, `React update batching behavior` 로 인해 하나의 `dispatching` 은 단 **한번의 re-render** 만 발생시킨다.
 
-  - `shallowEqual` 함수를 사용해 **shallow check** 을 하도록 한다.
+  - `shallowEqual` 함수를 사용해 **[shallow check](https://stackoverflow.com/questions/36084515/how-does-shallow-compare-work-in-react)** 을 하도록 한다.
 
     ```javascript
     import { shallowEqual, useSelector } from "react-redux";
