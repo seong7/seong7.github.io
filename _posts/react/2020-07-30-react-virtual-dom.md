@@ -7,14 +7,6 @@ categories: react
 published: true
 ---
 
-## 개요
-
-React 를 사용하는데만 집중해왔는데 좀 더 깊은 학습을 위해 매주 React 에 관련된 주제를 하나씩 정해 학습하고 글을 publish 하는 스터디를 시작했다.
-
-첫 번째이자 이번 주 주제는 **React 의 동작 원리** 이다.
-
-<br>
-
 ## Virtual DOM (가상 DOM)
 
 React 의 장점은 가상 DOM 을 통해서 UI 를 빠르게 업데이트한다는 점이다.
