@@ -9,32 +9,33 @@ published: true
 
 # React-Redux 라이브러리
 
-<details><summary>📖 Table of Contents</summary>
+📖 Table of Contents
 
-- [제공되는 함수](#제공되는-함수)
+- **개요**
+- **제공되는 함수**
 
-  - [`connect()`](<#`connect()`>)
+  - `connect()`
 
-- [Hooks](#Hooks)
+- **Hooks**
 
-  - [- `useSelector()`](<#--`useSelector()`>)
-  - [- `useDispatch()`](<#--`useDispatch()`>)
-  - [- `useStore()`](<#--`useStore()`>)
-  - [- Custom Context](<#--Custom Context>)
+  - `useSelector()`
+  - `useDispatch()`
+  - `useStore()`
+  - Custom Context
 
-- [Reference](#Reference)
-
-</details>
+- **Reference**
 
 <br/>
 
-`React Redux` 는 **`React` 의 `Redux` 를 위한 공식적인 `UI binding library`** <sub>어떠한 로직과 UI 를 결합시키는 라이브러리</sub> 이다.
+## 개요
 
-즉, `Redux` 와 `React` 를 함께 쓰고 있다면, **React-Redux** 라이브러리를 사용해 두 라이브러리를 bind 해줘야한다.
+React Redux 는 **React 의 Redux 를 위한 공식적인 `UI binding library`** <sub>(어떠한 로직과 UI 를 결합시키는 라이브러리)</sub> 이다.
 
-`UI` 와 `Redux` 를 연결하는 logic 을 직접 구현할 수도 있겠지만, 반복작업이 상당히 많을 것이고 그와 동시에 **UI performance** 를 최적화하는 것은 매우 복잡할 것이다.
+즉, Redux 와 React 를 함께 쓰고 있다면, **React-Redux** 라이브러리를 사용해 두 라이브러리를 bind 해줘야한다.
 
-**간단히 말해** `React-Redux` 는 **React 컴포넌트 (UI) 가** `Redux store` 로부터 data 를 읽을 수 있도록 해주고 `action` 을 `dispatch` 할 수 있게 해준다.
+`UI` 와 Redux 를 연결하는 logic 을 직접 구현할 수도 있겠지만, 반복작업이 상당히 많을 것이고 그와 동시에 **UI performance** 를 최적화하는 것은 매우 복잡할 것이다.
+
+**간단히 말해** React-Redux 는 **React 컴포넌트 (UI) 가** `Redux store` 로부터 data 를 읽을 수 있도록 해주고 `action` 을 `dispatch` 할 수 있게 해준다.
 
 <br />
 
@@ -69,7 +70,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 
 **React Redux v7.1.0.** 에서 함수형 컴포넌트에서 더 간편한 방법으로 `store` 에 접근할 수 있도록 다양한 **hook** 들이 release 되었다.
 
-hook 들이 나오면서 더 이상 복잡한 `HOC` 사용 없이도 `Redux store` 구독과 `dispatch actions` 를 할 수 있게 되었다.
+hook 들이 나오면서 더 이상 복잡한 HOC 사용 없이도 `Redux store` 구독과 `dispatch actions` 를 할 수 있게 되었다.
 
 단순히 원하는 hook 을 `import` 해서 함수형 컴포넌트 내부에서 사용하면 된다.
 
@@ -140,7 +141,7 @@ const result: any = useSelector(selector: Function, equalityFn?: Function)
 
 - `closure` 로 `props` 에 접근해 값을 추출
 
-  **!!! selector 를 pure 하게 써야 [error](https://react-redux.js.org/7.1/api/hooks#usage-warnings) 를 방지할 수 있으므로 해당 방법은 사용하지 말자**
+  > **!!! selector 를 pure 하게 써야 [error](https://react-redux.js.org/7.1/api/hooks#usage-warnings) 를 방지할 수 있으므로 이 방법은 사용하지 말자**
 
   ```javascript
   import React from "react";
@@ -152,7 +153,7 @@ const result: any = useSelector(selector: Function, equalityFn?: Function)
   };
   ```
 
-- **다 수의 값** 받아오는 방법들
+- **다수의 값** 받아오는 방법들
 
   - `useSelector()` 호출 하나 당 **하나의 field** 를 불러오도록 여러번 호출
 
