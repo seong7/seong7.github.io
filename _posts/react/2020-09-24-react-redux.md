@@ -14,13 +14,13 @@ published: true
 - **개요**
 - **제공되는 함수**
 
-  - `connect()`
+  - connect()
 
 - **Hooks**
 
-  - `useSelector()`
-  - `useDispatch()`
-  - `useStore()`
+  - useSelector()
+  - useDispatch()
+  - useStore()
   - Custom Context
 
 - **Reference**
