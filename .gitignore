@@ -11,4 +11,7 @@ _site
 .bundle/
 vendor/
 
+#vscode setting
+.vscode
+
 .jekyll-metadata
