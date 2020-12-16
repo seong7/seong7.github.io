@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "[자료구조] Linked List"
-date: 2020-07-22
-author: Jason
+date: 2020-12-16
 categories: computer_science
 ---
 
@@ -19,7 +18,7 @@ categories: computer_science
 - tail : 마지막 node (null 을 pointing 함)
 - **pointer** : 객체를 참조하는 링크
 
-  > 어떠한 객체가 참조를 받고 있지 않을 때 메모리에서 삭제하는 것이 `Garbage collection` 이라고 부른다.
+  > 어떠한 객체가 참조를 받고 있지 않을 때 메모리에서 삭제하는 것을 `Garbage collection` 이라고 부른다.
 
 - method :
   - append : `tail` 에 새로운 node 추가
