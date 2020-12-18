@@ -253,13 +253,25 @@ class DoublyLinkedList {
     return this.printList();
   }
 
+  // 찾고자 하는 index 의 크기에 따라 정순 / 역순을 결정할 수 있어 더 효율적으로 탐색 가능
   traverseToIndex(index) {
-    let counter = 0;
-    let currentNode = this.head;
-    while (counter !== index) {
-      currentNode = currentNode.next;
-      counter++;
+    if (index <= this.length / 2) {
+      let counter = 0;
+      let currentNode = this.head;
+      while (counter < index) {
+        currentNode = currentNode.next;
+        counter++;
+      }
     }
+    if (index > this.length / 2) {
+      let counter = this.length - 1;
+      let currentNode = this.tail;
+      while (counter > index) {
+        currentNode = currentNode.prev;
+        counter--;
+      }
+    }
+
     return currentNode;
   }
 
@@ -268,14 +280,14 @@ class DoublyLinkedList {
       const holdingPointer = this.head;
       this.head = this.head.next;
       this.head.prev = null;
-      holdingPointer.next = null;
+      holdingPointer.next = null; // 사라지는 노드가 가진 외부 참조 모두 제거
       this.length--;
       return this.printList();
     }
     if (index >= this.length - 1) {
       const holdingPointer = this.tail;
       this.tail = holdingPointer.prev;
-      holdingPointer.preve = null;
+      holdingPointer.prev = null; // 사라지는 노드가 가진 외부 참조 모두 제거
       this.tail.next = null;
       this.length--;
       return this.printList();
