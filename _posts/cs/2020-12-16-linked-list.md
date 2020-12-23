@@ -5,21 +5,16 @@ date: 2020-12-16
 categories: computer_science
 ---
 
-# Linked List
 ### Linked List 의 특징
 
 - 순서를 가진다.
 - HashTable 의 collision 에 대한 해결책으로 한 Hash 값 주소에 Linked List 를 저장해 충돌이 발생한 값들을 모두 저장할 수 있다.
-
-<br>
 
 ### Linked List 의 종류
 
 - Singly Linked List
 - Doubly Linked List
 - Circular Linked List
-
-<br>
 
 ### 구성요소
 
@@ -44,8 +39,6 @@ categories: computer_science
 - `prev` 속성이 없어 조작해주지 않아도 되므로 `remove` 나 `insert` 작업이 조금 더 빠르다.
 - `reverse search` 또는 `reverse traverse` 를 하지 못한다.
 - **memory 가 제한적이고 `search` 가 많이 없으며 `remove`, `insert` 에 집중할 때 사용하기 좋다.**
-
-<br>
 
 ### Singly Linked List 구현 코드
 
@@ -198,8 +191,6 @@ let myLinkedList = new LinkedList(10);
 - `reverse traverse` 가 가능해진다. (양방향 search 는 조금 더 효율적인 알고리즘을 짤 수 있게 해준다.)
 - **단점**은 메모리가 많이 소비된다. *(의문점 : 메모리에 저장된 데이터의 양은 동일해도 메모리 참조가 많으면 메모리 소비가 많아지는가? 왜?)*
 
-<br>
-
 ### Doubly Linked List 구현 코드
 
 ```javascript
@@ -334,14 +325,14 @@ let myLinkedList = new DoublyLinkedList(10);
 
 ## Circular Linked List
 
-원형 연결 리스트는 왜 필요할까?
+**원형 연결 리스트는 왜 필요할까?**
 
 Singly Linked List 의 가장 큰 단점은 (tail 포인터가 없다고 가정 <sub>실제로 알고리즘 문제에서도 tail 포인터가 주어지지 않는 경우가 많다.</sub>), List 의 마지막 노드를 추가하기 위해서  `O(n)` 의 시간 복잡도로 List 를 처음부터 끝가지 traverse (순회) 해야한다는 것이다.
 
 **이를 보완하기 위해서는 Circular Linked List** 가 가장 적합하다.
 
 `head` 포인터 대신 **`tail` 포인터**만 저장하고 있다면, List 의 마지막과 처음에 **상수 시간**으로 노드를 추가할 수 있다.  
-게다가 Doubly Linked List 처럼 너무 많은 메모리를 사용하지도 않는다.
+게다가 <u>Doubly Linked List 처럼 너무 많은 메모리를 사용하지도 않는다.</u>
 
 ```javascript
 class Node {
