@@ -5,14 +5,23 @@ date: 2020-12-16
 categories: computer_science
 ---
 
-## Linked List 의 특징
+# Linked List
+### Linked List 의 특징
 
 - 순서를 가진다.
 - HashTable 의 collision 에 대한 해결책으로 한 Hash 값 주소에 Linked List 를 저장해 충돌이 발생한 값들을 모두 저장할 수 있다.
 
 <br>
 
-## 구성요소
+### Linked List 의 종류
+
+- Singly Linked List
+- Doubly Linked List
+- Circular Linked List
+
+<br>
+
+### 구성요소
 
 - head : 첫 node
 - tail : 마지막 node (null 을 pointing 함)
@@ -27,7 +36,9 @@ categories: computer_science
 
 <br>
 
-## Singly Linked List 의 특징
+## Singly Linked List
+
+### Singly Linked List 의 특징
 
 - doubly linked list 보다 memory 를 더 적게 쓴다.
 - `prev` 속성이 없어 조작해주지 않아도 되므로 `remove` 나 `insert` 작업이 조금 더 빠르다.
@@ -36,15 +47,7 @@ categories: computer_science
 
 <br>
 
-## Doubly Linked List 의 특징
-
-- previous node 에 link 가 연결되어 있다.
-- `reverse traverse` 가 가능해진다. (양쪽 search 는 조금 더 효율적인 알고리즘을 짤 수 있게 해준다.)
-- **단점**은 메모리가 좀 더 많이 소비된다.
-
-<br>
-
-## Singly Linked List 의 코드
+### Singly Linked List 구현 코드
 
 reverse() 메소드를 통해 순서를 바꿀 수 있다
 
@@ -187,7 +190,17 @@ let myLinkedList = new LinkedList(10);
 
 <br>
 
-## Doubly Linked List 의 코드
+## Doubly Linked List
+
+### Doubly Linked List 의 특징
+
+- previous node 에 link 가 연결되어 있다.
+- `reverse traverse` 가 가능해진다. (양방향 search 는 조금 더 효율적인 알고리즘을 짤 수 있게 해준다.)
+- **단점**은 메모리가 많이 소비된다. *(의문점 : 메모리에 저장된 데이터의 양은 동일해도 메모리 참조가 많으면 메모리 소비가 많아지는가? 왜?)*
+
+<br>
+
+### Doubly Linked List 구현 코드
 
 ```javascript
 class Node {
@@ -208,6 +221,9 @@ class DoublyLinkedList {
     this.length = 1;
   }
 
+  // 마지막 노드 추가
+  // O(1) : tail 노드의 해쉬가 저장되어 있는 경우
+  // O(n) : tail 노드의 해쉬가 저장되어 있지 않은 경우
   append(value) {
     const newNode = new Node(value);
     this.tail.next = newNode;
@@ -217,6 +233,8 @@ class DoublyLinkedList {
     return this.printList();
   }
 
+  // 첫번째 노드 추가
+  // O(1)
   prepend(value) {
     const newNode = new Node(value);
     newNode.next = this.head;
@@ -237,6 +255,8 @@ class DoublyLinkedList {
     return array;
   }
 
+  // 원하는 위치에 노드 추가
+  // O(n)
   insert(index, value) {
     if (index >= this.length) {
       console.log("append");
@@ -253,9 +273,12 @@ class DoublyLinkedList {
     return this.printList();
   }
 
+  // 탐색
   // 찾고자 하는 index 의 크기에 따라 정순 / 역순을 결정할 수 있어 더 효율적으로 탐색 가능
+  // O(n)
   traverseToIndex(index) {
     if (index <= this.length / 2) {
+      // 정순
       let counter = 0;
       let currentNode = this.head;
       while (counter < index) {
@@ -264,6 +287,7 @@ class DoublyLinkedList {
       }
     }
     if (index > this.length / 2) {
+      // 역순
       let counter = this.length - 1;
       let currentNode = this.tail;
       while (counter > index) {
@@ -275,6 +299,8 @@ class DoublyLinkedList {
     return currentNode;
   }
 
+  // 원하는 위치의 노드를 제거
+  // O(n)
   remove(index) {
     if (index === 0) {
       const holdingPointer = this.head;
@@ -302,4 +328,86 @@ class DoublyLinkedList {
 }
 
 let myLinkedList = new DoublyLinkedList(10);
+```
+
+<br>
+
+## Circular Linked List
+
+원형 연결 리스트는 왜 필요할까?
+
+Singly Linked List 의 가장 큰 단점은 (tail 포인터가 없다고 가정 <sub>실제로 알고리즘 문제에서도 tail 포인터가 주어지지 않는 경우가 많다.</sub>), List 의 마지막 노드를 추가하기 위해서  `O(n)` 의 시간 복잡도로 List 를 처음부터 끝가지 traverse (순회) 해야한다는 것이다.
+
+**이를 보완하기 위해서는 Circular Linked List** 가 가장 적합하다.
+
+`head` 포인터 대신 **`tail` 포인터**만 저장하고 있다면, List 의 마지막과 처음에 **상수 시간**으로 노드를 추가할 수 있다.  
+게다가 Doubly Linked List 처럼 너무 많은 메모리를 사용하지도 않는다.
+
+```javascript
+class Node {
+  constuctor(data) {
+    this.data = data;
+    this.next = null;
+  }
+}
+
+class CircularLinkedList {
+  constructor(data) {
+    const node = new Node(data);
+    this.tail = node;           // head 없이 tail 만 가진다.
+    this.tail.next = this.tail; // 노드가 하나일 때도 순환 시켜준다.
+    this.length = 1;
+  }
+
+  // 마지막 노드 추가
+  // O(1)
+  append(data) {
+    const node = new Node(data);
+    if (this.tail === null) {
+      this.tail = node;
+      this.tail.next = this.tail;
+    } else {
+      node.next = this.tail.next; // 첫번째 노드와 연결
+      this.tail.next = node;
+      this.tail = node;
+    }
+  }
+
+  // 첫번째 노드 추가
+  // O(1)
+  prepend(data) {
+    const node = new Node(data);
+    if(this.tail === null) {
+      this.tail = node;
+      this.tail.next = this.tail;
+    } else {
+      node.next = this.tail.next; // 기존 첫번째 노드와 연결
+      this.tail.next = node;
+      // tail 포인터를 이동시키는 것 빼고는 append 와 동일!
+    }
+  }
+
+  // 마지막 노드 삭제
+  // O(n)  : tail 노드의 전 노드를 찾아야 하므로 traverse 필요
+  deleteFromEnd() {
+    const target = this.tail;
+    if(this.tail === null) {
+      return target;
+    }
+    let prev = this.tail.next;
+    while(prev.next !== target) {
+        prev = prev.next;
+    }
+    prev.next = target.next;
+    target.next = null;
+    this.tail = prev;
+    return target;
+  }
+
+  // 원하는 위치에 노드 추가
+  // O(n)
+  insert(index, data) {
+    // Singly Linked List 와 동일
+  }
+}
 ```
