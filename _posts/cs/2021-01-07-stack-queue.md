@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[자료구조] Stack 과 Queue"
-date: 2020-01-07
+date: 2021-01-07
 categories: computer_science
 ---
 
