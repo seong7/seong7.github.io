@@ -2,7 +2,7 @@
 layout: post
 title: "[자료구조] Linked List"
 date: 2020-12-16
-categories: computer_science
+categories: data_structures
 ---
 
 ### Linked List 의 특징
@@ -189,7 +189,7 @@ let myLinkedList = new LinkedList(10);
 
 - previous node 에 link 가 연결되어 있다.
 - `reverse traverse` 가 가능해진다. (양방향 search 는 조금 더 효율적인 알고리즘을 짤 수 있게 해준다.)
-- **단점**은 메모리가 많이 소비된다. *(의문점 : 메모리에 저장된 데이터의 양은 동일해도 메모리 참조가 많으면 메모리 소비가 많아지는가? 왜?)*
+- **단점**은 메모리가 많이 소비된다. _(의문점 : 메모리에 저장된 데이터의 양은 동일해도 메모리 참조가 많으면 메모리 소비가 많아지는가? 왜?)_
 
 ### Doubly Linked List 구현 코드
 
@@ -327,7 +327,7 @@ let myLinkedList = new DoublyLinkedList(10);
 
 **원형 연결 리스트는 왜 필요할까?**
 
-Singly Linked List 의 가장 큰 단점은 (tail 포인터가 없다고 가정 <sub>실제로 알고리즘 문제에서도 tail 포인터가 주어지지 않는 경우가 많다.</sub>), List 의 마지막 노드를 추가하기 위해서  `O(n)` 의 시간 복잡도로 List 를 처음부터 끝가지 traverse (순회) 해야한다는 것이다.
+Singly Linked List 의 가장 큰 단점은 (tail 포인터가 없다고 가정 <sub>실제로 알고리즘 문제에서도 tail 포인터가 주어지지 않는 경우가 많다.</sub>), List 의 마지막 노드를 추가하기 위해서 `O(n)` 의 시간 복잡도로 List 를 처음부터 끝가지 traverse (순회) 해야한다는 것이다.
 
 **이를 보완하기 위해서는 Circular Linked List** 가 가장 적합하다.
 
@@ -345,7 +345,7 @@ class Node {
 class CircularLinkedList {
   constructor(data) {
     const node = new Node(data);
-    this.tail = node;           // head 없이 tail 만 가진다.
+    this.tail = node; // head 없이 tail 만 가진다.
     this.tail.next = this.tail; // 노드가 하나일 때도 순환 시켜준다.
     this.length = 1;
   }
@@ -368,7 +368,7 @@ class CircularLinkedList {
   // O(1)
   prepend(data) {
     const node = new Node(data);
-    if(this.tail === null) {
+    if (this.tail === null) {
       this.tail = node;
       this.tail.next = this.tail;
     } else {
@@ -382,12 +382,12 @@ class CircularLinkedList {
   // O(n)  : tail 노드의 전 노드를 찾아야 하므로 traverse 필요
   deleteFromEnd() {
     const target = this.tail;
-    if(this.tail === null) {
+    if (this.tail === null) {
       return target;
     }
     let prev = this.tail.next;
-    while(prev.next !== target) {
-        prev = prev.next;
+    while (prev.next !== target) {
+      prev = prev.next;
     }
     prev.next = target.next;
     target.next = null;

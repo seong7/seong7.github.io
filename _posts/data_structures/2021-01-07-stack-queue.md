@@ -2,7 +2,7 @@
 layout: post
 title: "[자료구조] Stack 과 Queue"
 date: 2021-01-07
-categories: computer_science
+categories: data_structures
 ---
 
 ### Dequeue
