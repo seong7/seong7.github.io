@@ -2,8 +2,15 @@
 
 ## 명령어
 
-- Jekyll local server 시작
+docker compose 시작 
 
 ```
-bundle exec jekyll serve --watch --incremental
+docker-compose up -d 
+// localhost:4000 에서 확인 가능
+```
+
+docker compose 내리기
+
+```
+docker-compose down
 ```

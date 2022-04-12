@@ -14,4 +14,7 @@ vendor/
 #vscode setting
 .vscode
 
+#idea
+.idea
+
 .jekyll-metadata
