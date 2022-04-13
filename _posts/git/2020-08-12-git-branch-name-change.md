@@ -2,7 +2,6 @@
 layout: post
 title: "Git Branch 이름 변경하기"
 date: 2020-08-12
-author: Jason
 categories: Git_&_Github
 ---
 
@@ -16,7 +15,7 @@ git branch -m 변경전_branch_name 새로운_branch_name
 
 - 그리고 브랜치를 만들 땐 develop 브랜치에서 생성하도록 습관을 들이자.
 
-<br>
+
 
 ### Reference
 

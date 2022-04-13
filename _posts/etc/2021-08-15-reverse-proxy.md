@@ -2,7 +2,6 @@
 layout: post
 title: "NginX - Reverse Proxy 로 CORS 우회하기"
 date: 2021-08-15
-author: Seongjin
 categories: etc
 ---
 

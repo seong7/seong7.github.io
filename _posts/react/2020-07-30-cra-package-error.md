@@ -2,7 +2,6 @@
 layout: post
 title: "Create React App - eslint-watch 사용하기"
 date: 2020-07-30
-author: Jason
 categories: react
 published: true
 ---
@@ -26,7 +25,7 @@ Create React App 에는 이미 eslint 가 내장되어 있는데 내가 eslint �
 
 (정확히는 Error 는 아니고 서로 다른 버전의 dependency 중복에 의한 **hard-to-debug issue** 가 발생할 수 있다는 경고이다.)
 
-<br>
+
 
 ## 해결법
 
@@ -40,7 +39,7 @@ Create React App 에는 이미 eslint 가 내장되어 있는데 내가 eslint �
 
 내 컴퓨터가 너무 느려서.. yarn install 은 지옥과 같다..ㅠ
 
-<br>
+
 
 ## eslint-watch 실행하기
 

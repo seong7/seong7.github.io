@@ -2,7 +2,6 @@
 layout: post
 title: "Git Commit 취소"
 date: 2020-07-23
-author: Jason
 categories: Git_&_Github
 ---
 

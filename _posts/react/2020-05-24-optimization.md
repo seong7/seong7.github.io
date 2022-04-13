@@ -37,7 +37,7 @@ const onRemove = useCallback(
 
 하지만, todos 가 변경될 때에도 사실 상 함수를 새로 생설할 필요는 없다. (추가적인 최적화 필요)
 
-<br/>
+
 
 #### 방법1 : useState 의 setter 함수에 '함수형 매개변수' 사용
 
@@ -68,15 +68,15 @@ const onRemove = useCallback((id) => {
 **소요된 시간이 1s 이하로 상당히 많이 줄어든 것 확인 가능 !  
 (아래 사진 참조)**
 
-<br/>
+
 
 <a href="https://user-images.githubusercontent.com/52827441/87879352-1ef20680-ca25-11ea-902b-8232d468905c.JPG" data-lightbox="github1-large" data-title="performance_check">
 <img src="https://user-images.githubusercontent.com/52827441/87879352-1ef20680-ca25-11ea-902b-8232d468905c.JPG" alt="performance_check" style="width:500px"/>
 </a>
 
-<br/>
 
-<br/>
+
+
 
 #### 방법2 : useReducer 사용 [예시 >>](https://github.com/seong7/react-todo-app/blob/master/src/App_useReducer.js)
 

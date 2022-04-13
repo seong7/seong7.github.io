@@ -2,7 +2,6 @@
 layout: post
 title: "Github 블로그 (by Jekyll) 만들기 - 자료 모음"
 date: 2020-07-14
-author: Jason
 categories: etc
 ---
 
@@ -14,7 +13,7 @@ categories: etc
 
 혹시나 Github 블로그 만들기에 도전하는 분들이 있다면, 이 글을 통해 나보다 하루라도 덜 걸려 목표를 달성하시면 좋겠다. 🙂
 
-<br>
+
 
 ### 1. Github Pages 배포하기
 
@@ -41,7 +40,7 @@ Github Pages 는 static 웹사이트를 호스팅 해주는 Github 의 서비스
 
 내가 알기로는 master branch 만 배포가 가능하고 다른 branch 에서 배포를 테스트할 수는 없는 것으로 알고 있다.
 
-<br>
+
 
 ### 2. Ruby 및 Jekyll 설치하기
 
@@ -58,7 +57,7 @@ Jekyll 은 Ruby 로 작성되었으며 평범한 Ruby 의 Gem 이다.
 설치 방법은 **[Jekyll 공식 문서 한국어 버전](https://jekyllrb-ko.github.io/docs/installation/)** 을 보고 따라하는 것을 추천한다.  
 설치 외에도 루비의 기초 등 다양한 설명들이 큰 도움이 된다.
 
-<br>
+
 
 ### 3. Jekyll 로 블로그 생성하고 local 에서 열기
 
@@ -79,7 +78,7 @@ bundle exec jekyll serve --watch --incremental
 
 > 개인적으로 **`jekyll 블로그명`** 명령어로 Jekyll default 사이트를 생성하는 단계를 건너 뛰고 4번으로 갔다. (이유는 4번에서 설명)
 
-<br>
+
 
 ### 4. Jekyll theme 고르고 적용하기
 
@@ -121,7 +120,7 @@ Theme 이름은 **[Centrarium](https://github.com/bencentra/centrarium)** 이다
 
    참고로 내가 고른 Centrarium 은 Disqus 와 Google Analytics 가 이미 포함된 theme 이다. 간단한 설정으로 사용할 수 있었다.
 
-<br>
+
 
 ### 5. Jekyll theme 커스터마이징하기
 
@@ -141,7 +140,7 @@ Jekyll 로 생성된 사이트의 기본적인 디렉터리 구조와 Liquid 문
 > **\_config.yml 파일을 수정한 경우**  
 > 수정사항을 bundler 가 자동으로 감지하지 못하므로 server 를 반드시 재시작해줘야 반영된다.
 
-<br>
+
 
 ### 6. 내 블로그가 구글에서 검색되도록 하기
 
@@ -151,7 +150,7 @@ Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는�
 
 적용 후 시간이 조금 흐르면 검색이 가능해진다.
 
-<br>
+
 
 ### 기타 도움되는 사이트 모음
 
@@ -164,7 +163,7 @@ Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는�
 
 - **유니코드 이모티콘 테이블** : [웹사이트](https://unicode-table.com/en/)
 
-<br>
+
 
 ### 앞으로 적용할 부분
 
@@ -175,7 +174,7 @@ Jekyll 로 생성한 블로그는 default 로 Google 에서 검색되지 않는�
 http://labs.brandi.co.kr/2019/04/15/chunbs.html  
 https://github.com/christian-fei/Simple-Jekyll-Search
 
-<br>
+
 
 ## 출처 모음
 

@@ -2,7 +2,6 @@
 layout: post
 title: "비트 연산 정리"
 date: 2020-07-13
-author: Jason
 categories: data_structures
 ---
 
@@ -29,7 +28,7 @@ categories: data_structures
 - 이에 따라 Integer 의 범위는 **-2<sup>31</sup> ~ 2<sup>31</sup> - 1** 이된다.  
   (약 -21억... ~ +21억...)
 
-<br>
+
 
 ### 비트 연산
 
@@ -51,12 +50,12 @@ categories: data_structures
   - **`>> 수`** 연산 (arithmatic right shift) : 부호에 일치하는 수를 채움 (음수는 `1` , 양수는 `0`)
   - **`>>> 수`** 연산 (logical right shift) : 부호와 상관없이 `0` 을 채움
 
-<br>
+
 
 **Shift 연산과 `* 2` 또는 `/ 2` 와 다른 점 :**  
 shift 연산으로 32 비트 자리를 벗어난 값들은 소멸되므로 `* 2` 또는 `/ 2` 와 다르다. 정확한 값의 계산을 할 경우는 `* 2` 또는 `/ 2` 사용)
 
-<br>
+
 
 ### 비트 연산 응용 1
 
@@ -78,7 +77,7 @@ x | 1 = 1
 x | x = x
 ```
 
-<br>
+
 
 ### 비트 연산 응용 2 (coding)
 
@@ -233,7 +232,7 @@ x | x = x
    }
    ```
 
-<br>
+
 
 ### 출처
 

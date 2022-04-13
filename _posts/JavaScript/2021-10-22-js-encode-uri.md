@@ -2,7 +2,6 @@
 layout: post
 title: "JavaScript - encodeURIComponent() & encodeURI()"
 date: 2021-10-22
-author: Seongjin
 categories: JavaScript
 ---
 

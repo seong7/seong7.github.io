@@ -2,7 +2,6 @@
 layout: post
 title: "[리액트를 다루는 기술] Lifecycle"
 date: 2020-05-20
-author: Jason
 categories: react
 ---
 
@@ -20,19 +19,19 @@ categories: react
 
 - **Mount / Update / Unmount** 의 3가지 카테고리로 나눈다.
 
-  <br/>
+  
 
   <a href="https://user-images.githubusercontent.com/52827441/87873794-5483f900-c9ff-11ea-9c10-924e39b76cd4.JPG" data-lightbox="github1-large" data-title="lifecycle">
   <img src="https://user-images.githubusercontent.com/52827441/87873794-5483f900-c9ff-11ea-9c10-924e39b76cd4.JPG" alt="lifecycle" style="width:300px"/>
   </a>
 
-<br/>
+
 
 <a href="https://user-images.githubusercontent.com/52827441/87873807-72515e00-c9ff-11ea-9756-0a0772300421.JPG" data-lightbox="github1-large" data-title="lifecycle method">
 <img src="https://user-images.githubusercontent.com/52827441/87873807-72515e00-c9ff-11ea-9756-0a0772300421.JPG" alt="lifecycle method" style="width:500px"/>
 </a>
 
-<br/>
+
 
 ### 1. Mount
 

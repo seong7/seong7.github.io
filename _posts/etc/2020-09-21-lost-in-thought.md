@@ -2,7 +2,6 @@
 layout: post
 title: "생각 정리"
 date: 2020-09-21
-author: Jason
 categories: etc
 ---
 

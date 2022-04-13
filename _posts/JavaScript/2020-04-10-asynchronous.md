@@ -2,7 +2,6 @@
 layout: post
 title: "JS 비동기 문법에 대한 새로운 접근"
 date: 2020-04-10
-author: Jason
 categories: JavaScript
 ---
 

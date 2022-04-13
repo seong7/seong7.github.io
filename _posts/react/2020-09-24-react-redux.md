@@ -2,7 +2,6 @@
 layout: post
 title: "React-Redux 라이브러리"
 date: 2020-09-24
-author: Jason
 categories: react
 published: true
 ---
@@ -25,7 +24,7 @@ published: true
 
 - **Reference**
 
-<br/>
+
 
 ## 개요
 
@@ -64,7 +63,7 @@ const mapDispatchToProps = { increment, decrement, reset };
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 ```
 
-<br/>
+
 
 ## Hooks
 
@@ -74,7 +73,7 @@ hook 들이 나오면서 더 이상 복잡한 HOC 사용 없이도 `Redux store`
 
 단순히 원하는 hook 을 `import` 해서 함수형 컴포넌트 내부에서 사용하면 된다.
 
-<br/>
+
 
 ### - `useSelector()`
 
@@ -123,7 +122,7 @@ const result: any = useSelector(selector: Function, equalityFn?: Function)
 
   즉, `selector` 함수에서 **매번 새로운 객체를 생성해 `return`** 시키면 항상 re-render 가 일어나 **비효율적**이다.
 
-<br/>
+
 
 #### 사용 예
 
@@ -178,7 +177,7 @@ const result: any = useSelector(selector: Function, equalityFn?: Function)
 
   - memoized selector 를 지원하는 라이브러리를 사용한다. (예. [reselect](https://github.com/reduxjs/reselect))
 
-<br/>
+
 
 ### - `useDispatch()`
 
@@ -230,7 +229,7 @@ export const MyIncrementButton = React.memo(({ onIncrement }) => (
 ));
 ```
 
-<br/>
+
 
 ### - `useStore()`
 
@@ -254,7 +253,7 @@ export const CounterComponent = ({ value }) => {
 
 주석에 설명되어 있듯, **컴포넌트의 자동 update 가 막혀버리**므로 실제 App 에서 사용할 일은 없을 것 같다.
 
-<br/>
+
 
 ### - Custom Context
 

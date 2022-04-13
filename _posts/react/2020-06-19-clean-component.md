@@ -2,7 +2,6 @@
 layout: post
 title: "[번역] Clean Components"
 date: 2020-06-19
-author: Jason
 categories: react
 ---
 
@@ -18,7 +17,7 @@ categories: react
 
 그러던 중, 너무나도 적절한 시기에 [Medium](https://medium.com/) 에서 내가 그토록 원하던 글 하나를 추천해주었다.
 
-<br>
+
 
 ---
 
@@ -28,7 +27,7 @@ categories: react
 
 ---
 
-<br>
+
 
 ### 개요
 

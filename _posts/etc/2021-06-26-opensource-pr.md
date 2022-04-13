@@ -2,7 +2,6 @@
 layout: post
 title: "Open Source Project 에 PR 날리는 방법"
 date: 2021-06-26
-author: Seongjin
 categories: etc
 ---
 

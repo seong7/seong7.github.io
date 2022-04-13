@@ -29,7 +29,7 @@ categories: data_structures
   - prepend : `head` 에 새로운 node 추가
   - insert : 중간에 새로운 node 추가
 
-<br>
+
 
 ## Singly Linked List
 
@@ -181,7 +181,7 @@ class LinkedList {
 let myLinkedList = new LinkedList(10);
 ```
 
-<br>
+
 
 ## Doubly Linked List
 
@@ -321,7 +321,7 @@ class DoublyLinkedList {
 let myLinkedList = new DoublyLinkedList(10);
 ```
 
-<br>
+
 
 ## Circular Linked List
 

@@ -2,7 +2,6 @@
 layout: post
 title: "JavaScript console method 활용하기"
 date: 2021-11-05
-author: Seongjin 
 categories: JavaScript
 ---
 

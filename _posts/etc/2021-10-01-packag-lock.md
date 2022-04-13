@@ -2,7 +2,6 @@
 layout: post
 title: "package-lock.json 에 대해 알아보기"
 date: 2021-10-01
-author: Seongjin
 categories: etc
 ---
 
