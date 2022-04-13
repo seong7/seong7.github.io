@@ -9,7 +9,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: "Eco 의 개발 공부 로그"
+title: "Dev Log"
 # subtitle:
 email: seongjinkim1123@gmail.com
 name: Seongjin Kim
@@ -20,7 +20,7 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://seong7.github.io # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
+cover: "/assets/home_header.png"
 logo: "/assets/logo.png"
 
 # Build settings
@@ -31,7 +31,7 @@ highlightjs_theme: "monokai-sublime"
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 pagination:
-  enabled: false
+  enabled: true
   per_page: 3
   permalink: "/page/:num/"
   sort_reverse: true
